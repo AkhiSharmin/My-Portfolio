@@ -1,0 +1,99 @@
+/* Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* this defines what 1 rem is */
+  font-size: 62.5%; /* 1rem = 10px  10px*16px = 62% */
+  font-family: "Belanosima", sans-serif;
+}
+
+@media only screen and (max-width: 968px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/* button styles */
+.btn-sub,
+.btn-sub:link,
+.btn-sub:visited {
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+
+  border: 2px solid #6815eb;
+  cursor: pointer;
+
+  border-radius: 23.5px;
+
+  background-image: linear-gradient(to right, #ef00b7, #6815eb, #0078f3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.btn-sub:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(#fff, 0.2);
+}
+.btn-sub:active,
+.btn-sub:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(#fff, 0.2);
+}
+
+/* button styles */
+.btn-main,
+.btn-main:link,
+.btn-main:visited {
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  color: #fff;
+
+  cursor: pointer;
+
+  border-radius: 23.5px;
+  background-image: linear-gradient(to right, #ef00b7, #6815eb, #0078f3);
+}
+.btn-main:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(#fff, 0.2);
+  background-image: linear-gradient(to right, #6815eb, #0078f3);
+}
+.btn-main:active,
+.btn-main:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(#fff, 0.2);
+}
